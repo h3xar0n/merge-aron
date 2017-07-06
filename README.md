@@ -35,11 +35,11 @@ My background in product management, web development, and education makes me uni
 
 At Mosaica Education and Gameplan, I created features for a wide variety of distinct users, often within the same environment.
 
-I redesigned our learning-management system (LMS) at Mosaica to be different for students and teachers based on their respective needs. This work was largely guided by feedback from teachers, so building rapport with them and discovering the best solutions to their problems gave me excellent experience in team-based problem solving. After redesigning the general system and earning the confidence of the teachers, I used their continuous feedback throughout the year to improve over 200 curriculum units.
+I redesigned our learning management system (LMS) at Mosaica to be different for students and teachers based on their respective needs. This work was largely guided by feedback from teachers, so building rapport with them and discovering the best solutions to their problems gave me excellent experience in team-based problem solving. After redesigning the general system and earning the confidence of the teachers, I used their continuous feedback throughout the year to improve over 200 curriculum units.
 
 At Gameplan, I created the product overview video (in a single day!) and worked with our CTO to translate features into technical requirements. Much later on, as a developer, I took general wireframes from a UI designer and found ways to make them more interactive both for job seekers and employers. Thanks to my familiarity with JavaScript libraries, I was aware of possible interactions that the UI designer hadn't included yet, and we made excellent progress exchanging ideas and rapidly creating prototypes. When I wasn't writing code, I was providing thoughtful and empathetic feedback to other developers and designers.
 
-As a developer, I have built production-quality apps and sites with Ruby on Rails, Javascript (and frameworks and libraries such as Vue, React, Angular, and jQuery), HTML5, and CSS3. I love writing files in codes as much as READMEs in English, and of course, I love pushing both to the repository on GitHub to get those daily boxes as dark as possible.
+As a developer, I have built production-quality apps and sites with Ruby on Rails, Javascript (and frameworks and libraries such as Vue, React, Angular, and jQuery), HTML5, and CSS3. I love writing files in code as much as READMEs in English, and of course, I love pushing both to the repository on GitHub to get those daily boxes as dark as possible.
 
 ### What do I suppose are the challenges of working remotely, and how would I address them?
 
@@ -47,8 +47,7 @@ While living in Moscow and serving as the product owner on a scrum team with dev
 
 The biggest issues turned out to pertain to our ability to trust other members of the remote team and, by extension, our ability to communicate when an obstacle arose. Given very limited information about what other teammates are doing at a given moment, it could be tempting to jump to negative conclusions, such as, "I feel like the only one who is doing anything." While these thoughts simply aren't true, there is no immediate evidence to dispel them, which can lead to a decline in morale or, just as bad, to teammates taking on an unbalanced workload to compensate for the perceived lack.
 
-This issue can be prevented through team-building exercises, as well as the ability to easily see what other people are currently working on. I love GitHub's time card feature, and beyond just the manager, it can help other teammates better understand each others' contributions. This ability is especially important in non-
-hierarchical teams where people distribute tasks amongst themselves.
+This issue can be prevented through team-building exercises, as well as the ability to easily see what other people are currently working on. I love GitHub's time card feature, and beyond just the manager, it can help other teammates better understand each others' contributions. This ability is especially important in non-hierarchical teams where people distribute tasks amongst themselves.
 
 I have also found it very useful to have constant forms of "background" communication such as Slack, where people can post questions and comments on designated channels and get any remote teammate (rather than a specific one) to respond quickly. This horizontal, open form of communication is much better than using email or other heavily tunneled forms that cost us too much time with no guarantee of results.
 
