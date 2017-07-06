@@ -607,7 +607,6 @@ code {
   background: url("../img/hexyback.jpg") no-repeat center center fixed;
 }
 
-
 .dark-light img {
   min-width: 25vw;
 }
@@ -630,86 +629,14 @@ code {
 
 /*Contact Info*/
 
-.contact h2 {
-  color: white;
+.pull-request {
+  background-color: #FFFFFF;
 }
 
-#info-list {
-  margin-top: 15px;
-}
-
-#info-list p {
-  font-size: 17px;
-}
-
-.contact-name {
-  color: white;
-}
-
-.contact a {
-  color: white;
-  text-decoration: none;
-}
-
-.contact-link:hover {
-  color: #F2C193;
-  transition-duration: 0.5s;
-}
-
-#contact-link-coop:hover {
-  color: black;
-}
-
-#map {
-  height: 40vh;
-  /*min-width: 200px;*/
-  margin-top: 15px;
-  margin-bottom: 4vw;
-}
-
-/*Contact Form*/
-.contact-heading {
-  margin-top: 0;
-  text-align: center;
-  color: white;
-}
-
-.contact form h2 {
-  font-size: 1.9em;
-  color: white;
-  margin-top: 0px;
-}
-
-.contact form input, .contact form textarea {
-  border-radius: 5px;
-  width: 100%;
-  font-size: 1em;
-  margin-top: 1em;
-}
-
-form {
-  margin-bottom: 50px;
-}
-#input-submit {
-  max-width: 10em;
-}
-
-.schedule {
-  text-align: center;
-}
-
-.setmore {
-  color: #F2C193;
-  display: inline-block;
-  font-size: 10vw;
-  padding-bottom: 10px;
-  transition: 0.3s;
-}
-
-.setmore:hover {
-  color: black;
-  text-shadow: 0 0 10px white;
-  transition: 0.3s;
+.pull-shot {
+  width: 80vw;
+  max-width: 1000px;
+  margin: 0 10vw 0 10vw ;
 }
 
 /*Footer*/
