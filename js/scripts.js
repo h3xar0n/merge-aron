@@ -37,25 +37,25 @@ var workSampleList = new Vue({
     samples: [
       {
         alt:   'A small screenshot of the landing page for Glam by Adelina',
-        link:  'work/glam.html',
+        link:  'http://www.eideldev.com/work/glam.html',
         image: 'img/portfolio/glam/GlamSmall.png',
         class: 'vue-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of the landing page for A2 Accessories',
-        link:  'work/a2.html',
+        link:  'http://www.eideldev.com/work/a2.html',
         image: 'img/portfolio/a2/A2Small.png',
         class: 'rails-sample sass-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of the site for Gameplan Jobs',
-        link:  'work/gameplan.html',
+        link:  'http://www.eideldev.com/work/gameplan.html',
         image: 'img/portfolio/gpj/GameplanSmall.png',
         class: 'rails-sample react-sample angular-sample bootstrap-sample'
       },
       {
         alt:   'A small screenshot of Eideldev, this site',
-        link:  'http://eideldev.com/404',
+        link:  'http://eideldev.com',
         image: 'img/portfolio/eideldev/EideldevSmall.png',
         class: 'vue-sample bootstrap-sample'
       },
@@ -79,7 +79,7 @@ var workSampleList = new Vue({
       },
       {
         alt: 'A small screenshot of the Random Color Picker, a React app',
-        link: 'projects/random-color-generator-react/index.html',
+        link: 'http://www.eideldev.com/projects/random-color-generator-react/index.html',
         image: 'img/portfolio/color/PickerSmall.png',
         class: 'react-sample sass-sample'
       }
