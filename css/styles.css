@@ -234,8 +234,8 @@ code {
 
 .lightsite {
   background-color: white;
-  padding: 20px;
-  margin-top: 20vh;
+  padding: 10vh 10vw;
+  margin-top: 5vw;
   border: #f1f8ff solid 20px;
 }
 
@@ -245,8 +245,8 @@ code {
 
 .darksite {
   background-color: #2b3137;
-  padding: 20px;
-  margin-top: 20vh;
+  padding: 10vh 10vw;
+  margin-top: 5vw;
   border: #3f4448 solid 20px;
 }
 
@@ -267,10 +267,29 @@ code {
 }
 
 .dark2 {
-  height: 100vh;
+  height: 120vh;
   background: url(../img/dark.png) no-repeat center center fixed;
 }
 
+.half-page {
+  height: 20vw;
+}
+
+.limits {
+  margin-top: 5vw;
+  font-size: 5vw;
+}
+
+.world {
+  margin-top: 1vw;
+  font-size: 5vw;
+  text-align: right;
+  padding-right: 5vw;
+}
+.lighter {
+  background-color: #ffffff;
+  height: auto;
+}
 /*Work*/
 
 .work {
@@ -769,9 +788,6 @@ footer i:hover {
   }
   .contact {
   width: 100%;
-  }
-  .anchor {
-    min-height: 100vh;
   }
 
   .container-fluid>.navbar-header {
