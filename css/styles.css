@@ -226,28 +226,49 @@ code {
   margin-top: 10vh;
 }
 
+/*Subatom*/
+
+.hyper-atom {
+  background-color: #FFFFFF;
+}
+
+.hyper-atom h2 {
+  color: black;
+}
+
+.hyper-atom p {
+  color: black;
+}
+
+.hyper-atom i {
+  font-size: 5vw;
+}
+
+.subsample {
+  width: 50%;
+  margin: 3vw;
+}
+
 /*Dark*/
 .dark {
-  height: 100vh;
+  height: 50vh;
   background: url(../img/light.png) no-repeat center center fixed;
 }
 
 .lightsite {
   background-color: white;
   padding: 10vh 10vw;
-  margin-top: 5vw;
-  border: #f1f8ff solid 20px;
+  border-bottom: #f1f8ff solid 20px;
 }
 
-.lightsite h2 {
-  color: darkgray;
+.lightsite p, .lightsite h2 {
+  color: black;
 }
 
 .darksite {
   background-color: #2b3137;
   padding: 10vh 10vw;
-  margin-top: 5vw;
-  border: #3f4448 solid 20px;
+  border-top: #3f4448 solid 20px;
 }
 
 .darksite p {
@@ -262,12 +283,8 @@ code {
   color: wheat;
 }
 
-.lightsite h2 {
-  color: darkgray;
-}
-
 .dark2 {
-  height: 120vh;
+  height: 48vh;
   background: url(../img/dark.png) no-repeat center center fixed;
 }
 
