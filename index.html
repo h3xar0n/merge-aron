@@ -60,6 +60,8 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+          <li><a href="#readme">Editor</a></li>
+          <li><a href="#dark">Dark</a></li>
           <li><a href="#work-sec">Work</a></li>
           <li><a href="#skills-sec">Skills</a></li>
           <li><a href="#contact-sec">Contact</a></li>
@@ -83,7 +85,7 @@
                  class="important-elements">
           </div>
           <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-            <h2>Aspiring Product Designer at GitHub
+            <h2>A Collection of Ideas from <br/>an Aspiring GitHub Product Designer</h2>
           </div>
           <div class="col-xs-10 col-xs-offset-1 about-action">
             <div class="col-sm-4">
@@ -148,12 +150,28 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
       <!-- Logo Row -->
     </div> <!-- End Overlay -->
   </div><!-- End Landing -->
+  <!-- README demo -->
+  <div class="container readme anchor" id="readme">
+    <h2>Markdown Editor</h2>
+    <p class="col-sm-8 col-sm-offset-2 text-center">
+       READMEs are essential for developers to share their work with others, but it is easy to overlook their importance if they are a hassel to create. To encourage more engagement in writing thorough READMEs, we can
+       include prompts and show the user what their README will actually look like before they
+       commit.
+    </p>
+    <div id="editor" class="col-sm-11">
+      <textarea class="col-sm-4 col-sm-offset-2" :value="input" @input="update"></textarea>
+      <div class="col-sm-4" v-html="compiledMarkdown"></div>
+    </div>
+  </div>
+  <!-- Dark demo -->
+  <div class="container dark anchor" id="dark">
+
+  </div>
   <!-- Work -->
   <div class="container work anchor" id="work-sec">
     <h2 class="sample-title">Work</h2>
@@ -365,9 +383,8 @@
   <!-- JavaScript Files -->
   <!-- Vue -->
   <script src="https://unpkg.com/vue"></script>
-  <!-- Used in scripts.js -->
-  <script src="js/particles.min.js"></script>
-  <script src=js/skills.js></script>
+  <script src="https://unpkg.com/marked@0.3.6"></script>
+  <script src="https://unpkg.com/lodash@4.16.0"></script>
   <!-- Main JS file -->
   <script src=js/scripts.js></script>
   <!-- Must come after scripts.js -->
