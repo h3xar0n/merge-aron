@@ -25,8 +25,17 @@
   padding-bottom: 2em;
 }
 .nav-logo {
-  width: 2em;
-  height: 2em;
+  display: inline-block;
+}
+
+.nav-logo>img {
+  width: 40px;
+  height: 40px;
+  margin-top: -25px;
+}
+
+.nav-logo>i {
+  font-size: 40px;
 }
 .navbar-inverse .navbar-nav>li>a {
   color: black;
@@ -45,7 +54,7 @@
 /*Site Wide Font*/
 
 body {
-  background-color: #424242;
+  background-color: #2b3137;
 }
 * {
   font-family: 'Agane-45', sans-serif;
@@ -64,7 +73,6 @@ h2 {
   color: white;
 }
 h1, h2, .nav li {
-  /*text-transform: uppercase;*/
   text-align: center;
 }
 a {
@@ -87,22 +95,21 @@ a:hover, a:focus {
 /*Landing*/
 
 .logo-landing {
-  /*background-image: url("../img/gridscape_white.png");
+  min-height: 100vh;
+  background: url(../img/simple-codelines.svg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   background-attachment: fixed;
-  background-position: center;*/
-  min-height: 100vh;
-}
-.logo-landing {
-  min-height: 100vh;
 }
 .logo-title-center {
+  margin: 1vw 0;
   text-align: center;
 }
-.logo-title-center img {
-  width: 80%;
-  max-width: 250px;
+.logo-title-center>img {
+  width: 10vw;
 }
+
 .hex-port img {
   width: 100%;
   max-width: 200px;
@@ -119,29 +126,8 @@ a:hover, a:focus {
   -webkit-filter: drop-shadow(0px 0px 1px white);
   filter: drop-shadow(0px 0px 1px white);
 }
-
-/*Particles*/
-
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #424242;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-#over-particles {
-  z-index: 1;
+.about-action>div>i {
+  color: white;
 }
 
 /*Landing Logo and Buttons*/
@@ -153,17 +139,9 @@ canvas {
 .landing-title {
   margin-top: 15vh;
 }
-.landing-title h1 {
-  font-size: 4vw;
-}
 
 /*Fix Heading from Jumping over Logo*/
 
-@media (min-width: 900px) {
-  .landing-title h1 {
-    padding-top: 2.5vw;
-  }
-}
 .logo-landing img {
   max-width: 40vw;
 }
@@ -191,7 +169,6 @@ canvas {
   -webkit-filter: drop-shadow(0px 0px 2px white);
   filter: drop-shadow(0px 0px 2px white);
 }
-
 .btn-main:visited {
   text-decoration: none;
 }
@@ -904,14 +881,6 @@ footer i:hover {
 
 @media (max-width: 769px) {
 
-  h1 {
-    font-size: 1.7em;
-  }
-
-  h3 {
-    font-size: 1.5em;
-  }
-
   .center {
     width: 100%;
   }
@@ -924,14 +893,6 @@ footer i:hover {
 
   .logo-landing {
     width: 100%;
-  }
-
-  .logo-landing img {
-    margin-top: 15vh;
-  }
-
-  .logo-title {
-    margin-top: 5vh;
   }
 
   .about {
