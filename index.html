@@ -158,19 +158,74 @@
   <!-- README demo -->
   <div class="container readme anchor" id="readme">
     <h2>Markdown Editor</h2>
-    <p class="col-sm-8 col-sm-offset-2 text-center">
-       READMEs are essential for developers to share their work with others, but it is easy to overlook their importance if they are a hassel to create. To encourage more engagement in writing thorough READMEs, we can
-       include prompts and show the user what their README will actually look like before they
-       commit.
+    <p class="col-sm-6 col-sm-offset-3 text-center">
+       READMEs are essential for developers to share their work with others, but
+       documentation is often overlooked if it is perceived as a hassel to
+       create.
+       <br/>
+       <br/>
+       To encourage more engagement in writing strong, useful READMEs,
+       we can include prompts for ideas about what to include. We can also show
+       the user what their README will actually look like before they commit.
     </p>
-    <div id="editor" class="col-sm-11">
-      <textarea class="col-sm-4 col-sm-offset-2" :value="input" @input="update"></textarea>
-      <div class="col-sm-4" v-html="compiledMarkdown"></div>
+    <div id="editor" class="col-sm-12">
+      <textarea class="col-sm-4 col-sm-offset-1" :value="input" @input="update"></textarea>
+      <div class="col-sm-2 col-sm-offset-1" v-html="compiledMarkdown"></div>
+      <div class="col-sm-1"></div>
     </div>
+    <img src="https://guides.github.com/activities/hello-world/branching.png"
+         class="branch-visual">
+    <h3 class="text-center">Visualization</h3>
+    <p class="col-sm-8 col-sm-offset-2 text-center">
+      <br/>
+      Many of the ways GitHub can improve its reach center around visualization,
+      making tools more intuitive and concrete.
+      <br/>
+      <br/>
+      The Desktop app was instrumental in helping me better
+      understand how git commits and branches work.
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+    </p>
   </div>
   <!-- Dark demo -->
   <div class="container dark anchor" id="dark">
-
+    <div class="col-sm-6 col-sm-offset-3 lightsite">
+      <h2>Dark, please?<br/></h2>
+      <p>
+        With a great text-editor like Atom and many programmers preferring a
+        dark-style environment to read code, it seems that GitHub would greatly
+        benefit from offering an alternative to the standard white.
+        <br/>
+        <br/>
+        White and blue may be good for meeting the maximum accessibility
+        standards, but it doesn't have to be the only option.
+      </p>
+    </div>
+  </div>
+  <div class="container dark2 anchor">
+    <div class="col-sm-6 col-sm-offset-3 darksite">
+      <h2>Dark is also cool<br/></h2>
+      <p>
+        Some forms of colorblindness benefit more from dark backgrounds
+        because <span class="redone">syntax highlighting</span> is more <span
+        class="greenone">distinct</span>. It is also easier to
+        read at night or after staring at white pages all day long.
+        <br/>
+        <br/>
+        When Google Chrome's developer tools introduced a dark theme, people
+        went wild. I created this by simply altering the CSS in dev tools,
+        and it could easily be implemented with a switch at the top of the page
+        or in settings with a few classes and some JavaScript.
+        <br/>
+        <br/>
+        A tiny feature like this could bring a wave of new interest and engagement.
+      </p>
+    </div>
   </div>
   <!-- Work -->
   <div class="container work anchor" id="work-sec">

@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '***Type here on the left, it really works!***\n\n# Best README Ever\n\n*Hey*, **GitHub** user! Did you know you can easily style your text like this in your README.md file?\n\n## Isn\'t this cool?\n\nIt\'s easier than your first `hello, world!`\n\n### Benefits:\n* Shows you are a competent communicator\n* Allows other developers to appreciate your work more\n* Enables recruiters to more easily get you a job!\n\nI created this with\n[Vue.js](https://vuejs.org/v2/examples/index.html)'
+    input: '***Type here on the left, it really works!***\n\n# Best README Ever\n\n*Hey*, **GitHub** user!\n\nDid you know you can easily style your text like this in your README.md file?\n\n## Isn\'t this cool?\n\nIt\'s easier than your first `hello, world!`\n\n### Benefits:\n* Shows you are a competent communicator\n* Allows other developers to appreciate your work more\n* Enables recruiters to more easily get you a job!\n\nI created this with\n[Vue.js](https://vuejs.org/v2/examples/index.html)'
   },
   computed: {
     compiledMarkdown: function () {

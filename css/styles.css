@@ -221,6 +221,56 @@ code {
   color: #f66;
 }
 
+.branch-visual {
+  width: 100%;
+  margin-top: 10vh;
+}
+
+/*Dark*/
+.dark {
+  height: 100vh;
+  background: url(../img/light.png) no-repeat center center fixed;
+}
+
+.lightsite {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20vh;
+  border: #f1f8ff solid 20px;
+}
+
+.lightsite h2 {
+  color: darkgray;
+}
+
+.darksite {
+  background-color: #2b3137;
+  padding: 20px;
+  margin-top: 20vh;
+  border: #3f4448 solid 20px;
+}
+
+.darksite p {
+  color: lightgray;
+}
+
+.redone {
+  color: #f96868;
+}
+
+.greenone {
+  color: wheat;
+}
+
+.lightsite h2 {
+  color: darkgray;
+}
+
+.dark2 {
+  height: 100vh;
+  background: url(../img/dark.png) no-repeat center center fixed;
+}
+
 /*Work*/
 
 .work {
