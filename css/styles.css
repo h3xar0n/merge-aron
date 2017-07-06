@@ -45,11 +45,11 @@
   transition: 0.3s;
 }
 .navbar-inverse .navbar-nav>.active>a {
-  background-color: #424242;
+  background-color: #2B3137;
   transition: 0.3s;
 }
 .navbar-inverse .navbar-nav>.active>a:hover {
-  background-color: #424242;
+  background-color: #2B3137;
 }
 /*Site Wide Font*/
 
@@ -668,7 +668,7 @@ a:hover, a:focus {
 
 .skills-pan>.panel, .skills-pan>.panel-default>.panel-heading {
   color: white;
-  background: #424242;
+  background: #2B3137;
   transition: background .5s;
   border-radius: 15px;
   border-color: #595959;
@@ -837,7 +837,7 @@ footer {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 20px;
-  background-color: #424242;
+  background-color: #2B3137;
   color: white;
 }
 
