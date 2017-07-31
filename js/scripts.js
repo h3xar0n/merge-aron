@@ -3,7 +3,7 @@
 new Vue({
   el: '#editor',
   data: {
-    input: '***Type here on the left, it really works!***\n\n# Best README Ever\n\n*Hey*, **GitHub** user!\n\nDid you know you can easily style your text like this in your README.md file?\n\n## Isn\'t this cool?\n\nIt\'s easier than your first `hello, world!`\n\n### Benefits:\n* Shows you are a competent communicator\n* Allows other developers to appreciate your work more\n* Enables recruiters to more easily get you a job!\n\nI created this with\n[Vue.js](https://vuejs.org/v2/examples/index.html)'
+    input: '## README\n\n### Hello, {{ company }}!\n\nThank you for taking the time to visit this site. My name is Aron, and I\'m incredibly excited by the prospect of working with you.\n\nI am passionate about making information more enticing and accessible, from my first `alert(\'hello, world\')!` to this data-bound markdown editor.\n\n#### On this page, you will learn a bit more about:\n\n* How my values and experience match your culture\n\n* The skills I offer that you need now (and the ones you might need soon)\n\n* The passion that I have for web development\n\nShall we begin?\n\n___\n\n***If you would rather play with this editor before reading on, you can learn more about markdown on this\n[Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)***'
   },
   computed: {
     compiledMarkdown: function () {
@@ -13,7 +13,26 @@ new Vue({
   methods: {
     update: _.debounce(function (e) {
       this.input = e.target.value
-    }, 300)
+    }, 100)
+  }
+})
+
+// Culture
+
+new Vue({
+  el: '#glassdoor-list',
+  data: {
+    reviews: [
+      {
+        link:     'https://',
+        title:    '',
+        employee: '',
+        city:     '',
+        stars:    5,
+        intro:    '',
+        pros:     ''
+      }
+    ]
   }
 })
 
@@ -207,7 +226,7 @@ var workFlow = new Vue({
         name:  'Vim'
       },
       {
-        class: 'devicon-atom-plain atom-colored',
+        class: 'devicon-atom-plain colored',
         link:  'https://en.wikipedia.org/wiki/Atom_(text_editor)',
         name:  'Atom'
       },
@@ -217,12 +236,12 @@ var workFlow = new Vue({
         name:  'Git'
       },
       {
-        class: 'devicon-github-plain github-colored',
+        class: 'devicon-github-plain colored',
         link:  'https://en.wikipedia.org/wiki/GitHub',
         name:  'GitHub'
       },
       {
-        class: 'devicon-slack-plain slack-colored',
+        class: 'devicon-slack-plain colored',
         link:  'https://en.wikipedia.org/wiki/Slack_(software)',
         name:  'Slack'
       }

@@ -7,11 +7,7 @@
         content="width=device-width, height=device-height, initial-scale=1">
   <meta name="google-site-verification"
         content="gFlSLeooDPw4eRPPjZuEYr3E8ZVONOjp0RmWJZ2CEbk" />
-  <title>Merge Aron with GitHub</title>
-  <meta name="description"
-        content="Aron Eidelman's portfolio site, showcasing the sites and apps
-                he has created as a full-stack developer, as well as the
-                languages and tools in which he is proficient.">
+  <title>Aron ^ </title>
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -43,7 +39,7 @@
           <a class="navbar-brand" href="#land-sec">
             <!-- Nav Logo -->
             <div class="nav-logo">
-                <img src="img/devaron.png"
+                <img src="../../img/devaron.png"
                      class="important-elements"
                      alt="A small version of Aron's hexagon logo">
             </div>
@@ -53,20 +49,20 @@
                      alt="the git merge symbol">
             </div>
             <div class="nav-logo">
-                <i class="devicon-github-plain colored"></i>
+                <img src="img/logo.png"
+                     class="important-elements"
+                     alt="your company logo">
             </div>
           </a>
         </div> <!--end workName -->
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#readme">README</a></li>
-          <li><a href="#subatomic">Subatomic</a></li>
-          <li><a href="#light">Light</a></li>
-          <li><a href="#dark">Dark</a></li>
-          <li><a href="#work-sec">Work</a></li>
-          <li><a href="#skills-sec">Skills</a></li>
-          <li><a href="#pull-request">Pull</a></li>
+          <li><a href="#readme">Readme</a></li>
+          <li><a href="#culture">Culture</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#connect">Connect</a></li>
         </ul>
       </div> <!-- nav -->
     </div> <!-- end nav container-->
@@ -80,7 +76,7 @@
             <h1>Aron Eidelman</h1>
           </div>
           <div class="col-xs-12 logo-title-center">
-            <img src="img/devaron.png"
+            <img src="../../img/devaron.png"
                  alt="Aron's hexagon logo, which loosely resembles Boba Fett's
                      icon in Star Wars, but replaces the symbols with the
                      initials A E."
@@ -88,8 +84,7 @@
           </div>
           <div class="col-xs-12 col-sm-6 col-sm-offset-3">
             <h2 id="subtitle">
-              A Collection of Ideas from
-              <br/>an Aspiring GitHub Product Designer
+              Aspiring {{ position }} at {{ company }}
             </h2>
           </div>
           <div class="col-xs-10 col-xs-offset-1 about-action">
@@ -137,7 +132,7 @@
                     <div class="modal-body">
                         <embed id="modalembed"
                                class="modal-embeds"
-                               src="pdf/Aron_Eidelman_Dev_Resume_July_2017.pdf">
+                               src="pdf/ARONCV.pdf">
                     </div>
                   </div>
                 </div>
@@ -162,160 +157,208 @@
   </div><!-- End Landing -->
   <!-- README demo -->
   <div class="container readme anchor" id="readme">
-    <h2>README Markdown Editor</h2>
-    <p class="col-sm-6 col-sm-offset-3 text-center">
-       READMEs are essential for developers to share their work with others, but
-       documentation is often overlooked if it is perceived as a hassel to
-       create.
-       <br/>
-       <br/>
-       To encourage more engagement in writing strong, useful READMEs,
-       we can include prompts for ideas about what to include. We can also show
-       the user what their README will actually look like before they commit.
-    </p>
-    <div id="editor" class="col-sm-12">
-      <textarea class="col-sm-4 col-sm-offset-1" :value="input" @input="update"></textarea>
-      <div class="col-sm-2 col-sm-offset-1" v-html="compiledMarkdown"></div>
-      <div class="col-sm-1"></div>
-    </div>
-    <img src="https://guides.github.com/activities/hello-world/branching.png"
-         class="branch-visual">
-    <h3 class="text-center">Visualization</h3>
-    <p class="col-sm-8 col-sm-offset-2 text-center">
-      <br/>
-      Many of the ways GitHub can improve its reach center around visualization,
-      making tools more intuitive and concrete.
-      <br/>
-      <br/>
-      The Desktop app was instrumental in helping me better
-      understand how git commits and branches work, and the README editor follows that trend.
-      <br/>
-    </p>
-  </div>
-  <div class="container hyper-atom anchor" id="subatomic">
-    <h2>Subatomic</h2>
-    <div class="row text-center">
-      <div class="center">
-        <img src="img/subatomic.png" class="subsample center">
+    <p id="instructions">Type in this box, it really works</p>
+    <div id="editor">
+      <div id="editor-input">
+        <textarea :value="input"
+                  @input="update">
+        </textarea>
       </div>
-      <div class="col-sm-12 text-center">
-        <p>
-          We can put Hyper inside of Atom so that we can manipulate files, fire up a server, and commit our changes--all in one place.
-        <br/>
-        <br/>
+      <div id="editor-output"
+           v-html="compiledMarkdown">
+      </div>
+    </div>
+  </div>
+  <div class="container culture anchor" id="culture">
+    <h2>Culture</h2>
+    <h3 class="quote">
+      "There is nothing in nature more beneficial to us than a reasonable person."
+      <br>
+      - Baruch Spinoza
+    </h3>
+    <section id="culture-content">
+      <section id="personal-values">
+        <h4>Value evidence over opinion</h4>
+        <p>Being considered 'right' is not as important as eventually getting it
+          right. Through years of experience in a variety of roles, I have found
+          that I work much better in an open, collaborative environment than in
+          a competitive one where 'thumbs-up' or 'thumbs-down' trumps thoughtful
+          decision-making. I work well with people who are reasonably
+          open-minded and who value group success over their egos, because a
+          great idea can come from anyone.
         </p>
-        <div class="col-sm-12 text-center">
-          <div class="col-xs-4">
-            <i class="fa fa-bolt" aria-hidden="true"></i>
-          </div>
-          <div class="col-xs-4">
-            <i class="devicon-atom-original colored"></i>
-          </div>
-          <div class="col-xs-4">
-            <i class="devicon-git-plain colored"></i>
-          </div>
+        <br />
+        <h4>Passion for learning new things</h4>
+        <p>In past roles, I hit a relatively broad base of skillsets in my work.
+          Fortunately, my love for learning new skills and putting them into
+          practice led me to discover web development, and I have learned a new
+          framework, library, or language every single month since starting.
+          I am always ready to learn, and ideally I'll be able to teach you
+          things as well.
+        </p>
+        <br />
+        <h4>Sense of Ownership</h4>
+        <p>Life is too short to feel anything else. When Gameplan's resources
+          were too low to hire external developers, I switched modes from being
+          a product manager and took it upon myself to build my web dev skills.
+          Once we were back in full swing, I searched around the world for other
+          like-minded, capable people who could bring our product to life.
+        </p>
+      </section>
+      <section id="glassdoor-list">
+        <h4>My favorite reviews for you on
+          <img id="glassdoor-logo"
+               src="img/glassdoor.png"
+               alt="Glassdoor logo">
+        </h4>
+        <div v-for="review in reviews">
+          <article>
+            <img src="img/logo.png" class="review-logo">
+            <div class="review-body">
+              <a v-bind:href="review.link"
+                 target="_blank">
+                <h5 class="review-title">"{{ review.title }}"</h5>
+              </a>
+              <span v-for="star in review.stars">
+                <img src="img/star.png" class="score-star"/>
+              </span>
+              <span class="author-info">{{ review.employee }} in {{ review.city }}</span>
+              <article>
+                <br />
+                <p>{{ review.intro }}</p>
+                <p><strong>Pros</strong></p>
+                <p>{{ review.pros }}</p>
+              </article>
+            </div>
+            <br class="seperator" />
+          <article>
         </div>
+      </section>
+    </section>
+  </div>
+  <div class="container experience anchor" id="experience">
+    <h2>Experience</h2>
+    <h3 class="quote" id="metz">
+      "Building software is a guiltless pleasure because we get to use our creative energy to get things done."
+      <br>
+      - Sandi Metz
+    </h3>
+    <article class="feature1" id="sirota">
+      <div class="work-sample">
+        <img src="img/sirota.png" alt="Sirota lab on iPhone" class="work-image">
       </div>
-
-    </div>
-    <div class="row text-center">
-
-    </div>
-  </div>
-  <!-- Dark demo -->
-  <div class="container lightsite anchor" id="light">
-    <div class="col-sm-6 col-sm-offset-3">
-      <h2>The Light Site<br/></h2>
-      <p>
-        With a great text-editor like Atom and many programmers preferring a
-        dark-style environment to read code, it seems that GitHub would greatly
-        benefit from offering an alternative to the standard white.
-        <br/>
-        <br/>
-        White and blue may be good for meeting the maximum accessibility
-        standards, but it doesn't have to be the only option.
-      </p>
-    </div>
-  </div>
-  <div class="container dark anchor">
-  </div>
-  <div class="container dark2 anchor" id="dark">
-  </div>
-  <div class="container darksite anchor">
-    <div class="col-sm-8 col-sm-offset-2">
-      <h2>The Dark Site<br/></h2>
-      <p>
-        <br/>
-        Some forms of colorblindness benefit more from dark backgrounds
-        because <span class="redone">syntax highlighting</span> is more <span
-        class="greenone">distinct</span>. It is also easier to
-        read at night or after staring at white pages all day long.
-        <br/>
-        <br/>
-        When Google Chrome's developer tools introduced a dark theme, people
-        went wild. I created this by simply altering the CSS in dev tools,
-        and it could easily be implemented with a switch at the top of the page
-        or in settings. Using JavaScript, we could alter the classes of elements
-        across the site to use dark backgrounds and pastel text.
-        <br/>
-        <br/>
-        A tiny feature like this could bring a wave of new interest and engagement.
-      </p>
-    </div>
-  </div>
-  <!-- Wittgenstein -->
-  <div class="container half-page">
-    <p class="limits">"The limits of my language</p>
-  </div>
-  <div class="container anchor lighter">
-    <p class="world">mean the limits of my world."</p>
-    <p class="world">
-      -Wittgenstein
-    </p>
-  </div>
-  <!-- Work -->
-  <div class="container work anchor" id="work-sec">
-    <h2 class="sample-title">Work</h2>
-    <p class="text-center col-sm-8 col-sm-offset-2">
-      <br/>
-      As an experienced product manager and developer, I can empathize with both
-      sides of the equation and draw from a diverse set of competencies. These
-      are a few of the projects I've worked on that combine both skillsets.
-      <br/>
-      <br/>
-    </p>
-    <!-- Vue Skill Selector -->
-    <div id="skills-used" class="hidden-xs">
-      <div class="row" id="skill-list">
-        <div v-for="skill in skills">
-          <div class="col-sm-2">
-            <a href="#skills-sec">
-              <i v-bind:class="skill.class"></i>
-            </a>
-          </div>
-        </div>
+      <div class="work-description">
+        <h4>Sirota Lab</h4>
+        <p>I am currently finishing a contract for a bioinformatics and genomics
+          lab at UCSF. The lab specializes in researching the effects of drugs
+          at the molecular level to see if there is a way that they can be
+          repurposed to treat diseases they were not intentionally created for.
+          Their old site had been built with an ancient template that was laden
+          with bloated, repititous, and invalid code, as well as unoptimized
+          images.
+          <br>
+          <br>
+          at their request, I left the layout and content untouched, but focused
+          on (1) making the site responsive and (2) handling the repitive sections
+          with JavaScript. I started working on the layout with Bootstrap, but
+          quickly noticed issues with style conflicts, so I opted for using
+          flexbox and media queries instead.
+          <br>
+          <br>
+          To handle repition and interactivity, I avoided unnecessary JavaScript
+          as much as possible, and opted for Vue.js and jQuery for some basic tasks.
+          I had fun teaching the team the basics of Vue.js, and since they're
+          all capable programmers in R and Python, I got some interesting lessons
+          myself.
+        </p>
       </div>
-    </div>
-    <div id="portfolio">
-      <!-- Vue Row  -->
-      <div class="row" id="work-samples">
-        <div v-for="sample in samples">
-          <div class="col-sm-3">
-            <a v-bind:href="sample.link">
-              <img class="img-responsive portfolio-sample"
-                   v-bind:class="sample.class"
-                   v-bind:src="sample.image"
-                   v-bind:alt="sample.alt">
-            </a>
-          </div>
-        </div>
+    </article>
+    <article class="feature2" id="glam">
+      <div class="work-description">
+        <h4>Glam by Adelina</h4>
+        <p>The website for
+          <a href="http://glambyadelina.com/" target="_blank">
+            Glam by Adelina
+          </a>
+          has been one of my longest projects with the most iterations. Starting
+          in Atlanta and moving to San Francisco, the business itself has grown
+          considerably since my work began. In that time, I have redesigned it
+          three times, replaced JavaScript libraries twice, and added three
+          major new features since its launch: Instagram integration, streaming
+          Yelp reviews, and a booking system through Setmore similar to the one
+          on this page.
+          <br>
+          <br>
+          According to Google Analytics, lead
+          generation increased over 500% in the first month since it launched
+          last year, and it scores equally with word-of-mouth referals for all
+          new leads. It's a great business, so the fact the site still keeps up
+          with referals is pretty exciting. Many of Adelina's clients have even
+          mentioned that the 'beautiful, professional website' is what inspired
+          their confidence to book with her for the biggest event in their lives.
+        </p>
       </div>
-    </div>
-
-  </div> <!-- End Work -->
+      <div class="work-sample">
+        <img src="img/glam.png" alt="Glam by Adelina on phone and computer" class="work-image">
+      </div>
+    </article>
+    <article class="feature1" id="gameplan">
+      <div class="work-sample">
+        <img src="img/gpdesk.png" alt="Gameplan jobs on desktop" class="work-image">
+      </div>
+      <div class="work-description" id="gp-description">
+        <h4>Gameplan Jobs</h4>
+        <p>
+          At <a href="http://gameplanjobs.com/" target="_blank">Gameplan</a>,
+          I designed and managed the development of a new
+          high-volume assessment and job placement app for companies in the US,
+          UK, and India. When it came time to build our prototype, it became apparent how badly we needed an in-house
+          developer. As a start-up, this was not within our budget, so I stepped
+          up to learn what we needed.
+          <br>
+          <br>
+          Within two weeks of starting CareerFoundry's mentorship program, I was already
+          shipping production-quality code with the rest of the Gameplan team. As
+          I dove deeper into Angular, React, and Ruby on Rails, I was not only able to
+          create more--I was able to help our company make informed decisions
+          about which tools to use, especially whether to use a single-page
+          application or the full-stack approach.
+        </p>
+      </div>
+    </article>
+    <article class="feature2" id="code">
+      <div class="work-description">
+        <h4>Continued Practice<h4>
+        <p>I never stop learning. To keep my analytical skills sharp, I regularly
+          put them into practice with test-driven development, debugging, and
+          optimization. In the immortal words of Daft Punk, "Our work is never over,"
+          and while I always strive to create software that will actually ship,
+          I never stop improving it.
+          <br>
+          <br>
+          While working at Gameplan, I discovered the power of GitHub Enterprise,
+          which allowed our team the ability to easily collaborate and quickly
+          recover whenever things went haywire. I also have a
+          <a href="https://github.com/h3xar0n" target="_blank">
+            private account
+          </a>
+          where you can check out my vast
+          array of side projects.
+        </p>
+      </div>
+      <div class="work-sample">
+        <img src="img/subatomic.png" alt="Atom on desktop" class="work-image">
+      </div>
+    </article>
+  </div>
   <!-- Skills -->
-  <div class="container skills anchor" id="skills-sec">
+  <div class="container skills anchor" id="skills">
     <h2>Skills</h2>
+    <h3 class="quote" id="wittgenstein">
+      "The limits of my language mean the limits of my world."
+      <br>
+      - Ludwig Wittgenstein
+    </h3>
     <div class="panel-group skills-pan center" id="accordion">
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -392,10 +435,17 @@
     </div>
   </div> <!-- End Skills -->
   <!-- Contact -->
-  <div class="container pull-request anchor" id="pull-request">
-    <a href="https://eideldev.setmore.com/" target="_blank"> <!-- Setmore -->
-      <img src="img/Pullreq.png" class="pull-shot">
-    </a>
+  <div class="container pull-request anchor" id="connect">
+    <h2>Connect</h2>
+    <section class="details">
+      <div class="setmore">
+        <iframe class="embedded-stuff" src="https://eideldev.setmore.com/"></iframe>
+      </div>
+      <div class="map">
+        <iframe class="embedded-stuff" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50467.62937235769!2d-122.52168292333297!3d37.76127907976191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085877753edc3d1%3A0xbb5fa0834d5b5e2d!2sJudah+St+%26+28th+Ave%2C+San+Francisco%2C+CA+94122!5e0!3m2!1sen!2sus!4v1500874027663" style="border:0" allowfullscreen></iframe>
+      </div>
+    </section>
+
   </div><!-- End Contact -->
   <!-- Footer -->
   <footer>
